@@ -1,4 +1,4 @@
-var nextdate = require('../nextdate.js');
+var nextdate = require('../lib/nextdate.js');
 var assert = require('assert');
 
 describe('nextdate()', function() {
