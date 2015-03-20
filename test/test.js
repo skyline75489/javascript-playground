@@ -15,6 +15,12 @@ describe('nextdate()', function() {
     assert.equal(d.year, 2000);
     assert.equal(d.month, 2);
     assert.equal(d.day, 29);
+
+    var d2 = nextdate.nextdate(1994, 2, 28)
+    assert.equal(d2.year, 1994);
+    assert.equal(d2.month, 2);
+    assert.equal(d2.day, 29);
+
   });
 
   it('should know about non-leap year', function(){
