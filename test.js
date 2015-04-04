@@ -73,10 +73,13 @@ var coolcat = function (spec) {
   return that;
 };
 
-var myMammal = mammal({name: 'Herb'});
+var myMammal = mammal({name: 'Herb', saying: 'what'});
 var myCat = cat({name: 'Henrietta'});
 var myCoolCat = coolcat({name: 'Bix'});
 
 console.log(myMammal.get_name());
+console.log(myMammal.says());
+// console.log(myMammal.saying);
+// saying is undefined, like private property
 console.log(myCat.get_name());
 console.log(myCoolCat.get_name());
