@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>NextDate</title>
+</head>
+<body>
+<form method="post" action="/nextdate">
+<input type=number placeholder="Year" name="year">
+<input type=number placeholder="Month" name="month">
+<input type=number placeholder="Day" name="day">
+
+<input type=submit>
+</form>
+<% if (locals.result1) { %>
+<p><%=result1%></p>
+<p><%=result2%></p>
+<p><%=result3%></p>
+<% } %>
+</body>
+</html>
