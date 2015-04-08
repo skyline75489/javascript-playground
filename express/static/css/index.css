@@ -1,0 +1,13 @@
+.content {
+  margin: 2em auto;
+  width: 700px;
+}
+
+.form-Input {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.form-Button {
+  text-align: center;
+}

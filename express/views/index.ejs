@@ -1,19 +1,24 @@
 <html>
 <head>
 <title>NextDate</title>
+<link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
-<form method="post" action="/nextdate">
-<input type=number placeholder="Year" name="year">
-<input type=number placeholder="Month" name="month">
-<input type=number placeholder="Day" name="day">
+<div class="content">
+<form class="dateForm" method="post" action="/nextdate">
+<input class="form-Input" type=number placeholder="Year" name="year" min="1900" max="2100" required>
+<input class="form-Input" type=number placeholder="Month" name="month" min="1" max="12" required>
+<input class="form-Input" type=number placeholder="Day" name="day" required>
 
-<input type=submit>
+<input class="form-Button" type=submit>
 </form>
 <% if (locals.result1) { %>
+<div class="result">
 <p><%=result1%></p>
 <p><%=result2%></p>
 <p><%=result3%></p>
+</div>
 <% } %>
+</div>
 </body>
 </html>

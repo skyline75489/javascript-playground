@@ -2,13 +2,13 @@ var express = require('express');
 var lunar = require('lunar-calendar');
 var DateParser = require('date.js');
 var bodyParser = require('body-parser');
-
 var app = express();
 
 
 app.set('view engine', 'ejs');
-app.use(bodyParser.urlencoded({extended: true}));
+app.use('/static', express.static(__dirname + '/static'));
 
+app.use(bodyParser.urlencoded({extended: true}));
 app.get('/', function (req, res) {
     res.render('index');
 });
